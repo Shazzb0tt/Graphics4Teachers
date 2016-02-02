@@ -1,0 +1,62 @@
+﻿@using Microsoft.AspNet.Identity
+@using Graphics4Teachers.Models
+
+<head>
+    @model LoginViewModel
+@Styles.Render("~/Content/css")
+@Scripts.Render("~/bundles/modernizr")
+<script>
+    function changeImage(element) {
+        var open = "../images/login.png";
+        var closed = "../images/logina.png";
+        element.src = element.bln ? open : closed;
+        if (!element.bln) $("#cont").show(); else $("#cont").hide();
+        element.bln = !element.bln;
+    }
+</script>
+</head>
+
+@if(Request.IsAuthenticated)
+{
+    using (Html.BeginForm("LogOff", "Account",new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { id = "logoutForm"}))
+    {
+        @Html.AntiForgeryToken()
+    <input type="image" class="logout" src="~/images/logout.png" />
+    }
+}
+else
+{
+
+    <a href="#" class="menulink"><img src="~/images/login.png" class="login" onclick="changeImage(this)" /></a>
+using(Html.BeginForm("Login", "Account", FormMethod.Post, new { @class = "form-signin", id = "cont"}))
+    {
+    @Html.AntiForgeryToken()
+    <div class="form-group">
+        <label for="inputEmail" class="control-label">Email address</label>
+        @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+    </div>
+    <div class="form-group">
+        <label for="inputEmail" class="control-label">Password</label>
+        @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+    </div>
+    <div class="form-group">
+        <div class="col-md-6">
+            <input type="submit" runat=server value="Sign in" class="btn btn-lg btn-primary btn-block" />
+        </div>
+        <div class="col-md-6">
+            <a href="#">Forgot password?</a>
+        </div>
+
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-12">
+            <br />
+            <button class="btn btn-lg btn-danger btn-block" type="submit">Subcribe NOW</button>
+        </div>
+    </div>
+
+}
+}
