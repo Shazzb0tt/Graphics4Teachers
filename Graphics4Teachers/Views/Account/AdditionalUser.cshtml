@@ -9,7 +9,7 @@
 </center>
 <br />
 <div class="container">
-    <div class="row">
+    <div class="row front-row">
         <div class="col-md-6">
             <div class="padded-left">
                 @using (Html.BeginForm("AdditionalUserOne", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
@@ -18,10 +18,8 @@
                     <div class="form-group">
                         <p>New user #1 email adress</p>
                         @Html.TextBoxFor(m => m.emailOne, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(m => m.emailOne, "", new { @class = "text-danger" })
                         <p>Confirm new user #1 email address</p>
-                        @Html.TextBoxFor(m => m.emailOne, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(m => m.emailOne, "", new { @class = "text-danger" })
+                        @Html.TextBox("EmailBox","", new { @class = "form-control" })
                     </div>
                     <div class="form-group">
                         <input type="image" class="add-user-button" src="~/images/addbutton.png" />
@@ -38,7 +36,6 @@
                     <div class="form-group">
                         <p>New user #2 email adress</p>
                         @Html.TextBoxFor(m => m.emailTwo, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(m => m.emailTwo, "", new { @class = "text-danger" })
                         <p>Confirm new user #2 email address</p>
                         @Html.TextBoxFor(m => m.emailTwo, new { @class = "form-control" })
                         @*Html.ValidationMessageFor(m => m.emailTwo, "", new { @class = "text-danger" })*@

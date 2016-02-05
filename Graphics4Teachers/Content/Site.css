@@ -172,7 +172,7 @@ img.bg {
 input,
 select,
 textarea {
-    max-width: 50%;
+    max-width: 80%;
 }
 .navbar-inverse { background-color: black; margin-bottom: 1.75em; z-index:3; position: fixed;}
 .nav.navbar-nav li a {
@@ -282,4 +282,15 @@ img.change-password{
     height:50px;
     margin-top:2%;
     margin-right:-3%;
+}
+
+.front-row{
+    z-index:1031;
+    position:relative;
+}
+
+.change-password-button{
+    left:10%;
+    padding-top:2%;
+    width:60%;
 }
