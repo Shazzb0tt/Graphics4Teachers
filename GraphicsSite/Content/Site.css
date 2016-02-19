@@ -1,0 +1,519 @@
+﻿/*body {
+    padding-top: 50px;
+    padding-bottom: 20px;       
+}*/
+
+
+/*html { 
+  background-image: url('../images/main.png') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}*/
+img.phone{
+    z-index:9;
+    position: relative;
+    width:100%;
+    height:auto;
+    top:120px;
+}
+img.lessons{
+    position: relative;
+    width:100%;
+    height:auto;
+    margin-top: 35%;
+    margin-bottom: 35%;
+
+}
+img.pres{
+    z-index:9;
+    position: fixed;
+    top: 700px;
+    left:500px;
+}
+img.yellowpage{
+    z-index:8;
+    position:relative;
+    display:block;
+    height:auto;
+    width:90%;
+    margin-top:-20%;
+    top: 10px;
+    left:5%;
+
+}
+img.rubber{
+    z-index:1031;
+    width:7%;
+    height:auto;
+     -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    transform: rotate(15deg);
+     position: fixed;
+    top: 30px;  
+    right:20px;
+}
+img.fbd{
+    z-index:11;
+     position: fixed;
+    top: 18px;  
+    right:100px;
+     -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    transform: rotate(15deg);
+}
+img.twd{
+    z-index:11;
+     position: fixed;
+   
+     top: 32px;  
+    right:39px;
+     -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    transform: rotate(15deg);
+}
+img.mouse{
+    z-index:4;
+    position: fixed; bottom: -50px; right: 175px;
+    rotation: 50deg;
+    rotation-point:center;
+    width: 6%;
+    height: auto;
+    -webkit-transform: rotate(310deg);
+    -moz-transform: rotate(310deg);
+    -ms-transform: rotate(310deg);
+    -o-transform: rotate(310deg);
+    transform: rotate(310deg);
+}
+img.login{
+    z-index:99;
+    position: relative;
+    margin-top:9%;
+    float:right;
+    width:18%;
+    height:auto;
+}
+
+.vertical-rule{
+    border-left: thick solid #000000;
+    padding-left: 10%;
+}
+
+.logout{
+    z-index:99;
+    position: relative;
+    margin-top:9%;
+    float:right;
+    width:18%;
+    height:auto;
+}
+img.home{
+    z-index:1400;
+    position: fixed;
+    top:-4px;
+    height:10%;
+    width:auto;
+    left:10%;
+}
+div.banner{
+     width:100%;
+     background-image:url('../images/banner.png');
+}
+
+div.placeholder {
+    background-image: url('../images/login.png');
+    width: 395px;
+    height: 108px;
+    z-index:5;
+}
+img.bg {
+			/* Set rules to fill background */
+			min-height: 100%;
+			min-width: 1024px;
+			
+			/* Set up proportionate scaling */
+			width: 100%;
+			height: auto;
+			
+			/* Set up positioning */
+			position: fixed;
+			top: 0;
+			left: 0;
+            z-index:1;
+		}
+		
+		@media screen and (max-width: 1024px){
+			img.bg {
+				left: 50%;
+                z-index:1;
+				margin-left: -512px; }
+		}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+   /* max-width: 80%;*/
+}
+.navbar-inverse { background-color: black; margin-bottom: 1.75em; z-index:3; position: fixed;}
+.nav.navbar-nav li a {
+     color: white; 
+     font: bolder;
+     font-size: 20px;
+     padding-right: 4em;
+ }
+ .nav .navbar-nav li a:hover { 
+     color: grey;
+ }
+
+ .form-signin {
+width:15%;
+max-height:10%;
+  padding: 15px;
+  margin: 0 auto;
+  position:fixed;
+  z-index:99;
+  top: 15%;  
+  right:2%;
+  display: none;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;z-index:99;
+}
+.form-signin .checkbox {
+  font-weight: normal;z-index:99;
+}
+.form-signin .form-control {
+  position: relative;z-index:99;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;z-index:99;
+  width:350px;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 15px;
+  border-top-left-radius: 0;z-index:99;
+  border-top-right-radius: 0;
+}
+
+.bgimg {
+    background-image: url('../images/banner.png');
+    z-index:10;
+}
+
+body {
+    padding-top:15%;
+  background-image: url('../images/background.png');
+background-size:cover;
+  background-repeat:repeat;
+
+}
+
+.padded-top{
+    padding-top:5%;
+}
+.padded-top-small{
+    padding-top:2%;
+}
+
+.add-user-button{
+    width:30%;
+    height:auto;
+}
+
+.padded-left{
+    padding-left:10%;
+}
+
+.textbox-width{
+    width:60%;
+    
+}
+
+.text-align-right{
+    float:right;
+}
+
+.bottom-border{
+    border-bottom:thick solid #000000;
+    padding-bottom: 3%;
+}
+
+img.add-user{
+    width:50%;
+    height:50px;
+    margin-top:2%;
+    margin-left:-3%;
+    margin-right:-3%;
+}
+img.change-password{
+    width:50%;
+    height:50px;
+    margin-top:2%;
+    margin-right:-3%;
+}
+
+.front-row{
+    z-index:1031;
+    position:relative;
+}
+
+.change-password-button{
+    left:10%;
+    padding-top:2%;
+    width:60%;
+}
+
+img.try-free{
+    position:fixed;
+    left:-2%;
+    top:25%;
+    width:40%;
+    height:auto;
+}
+
+img.checkout{
+    position:fixed;
+    z-index:100;
+    top:75%;
+    width:40%;
+    height:auto;
+    left:62%;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+}
+
+.checkout-text{
+    position:fixed;
+    z-index:101;
+    padding-left:4%;
+    padding-bottom:1%;
+    padding-top:1%;
+    top:77%;
+    left:67%;
+    font-size:medium;
+    background-image:url(../images/checkout.png);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    width:34%;
+    height:auto;
+}
+
+img.postit-one{
+    position:fixed;
+    z-index:150;
+    top:45%;
+    left:4%;
+    width:25%;
+    height:auto;
+}
+
+img.postit-two{
+    position:fixed;
+    z-index:150;
+    top:35%;
+    left:21%;
+    width:23%;
+    height:auto;
+}
+
+img.postit-three{
+    position:fixed;
+    z-index:150;
+    top:26%;
+    left:39%;
+    width:22%;
+    height:auto;
+}
+
+img.postit-four{
+    position:fixed;
+    z-index:150;
+    top:21%;
+    left:54%;
+    width:25%;
+    height:auto;
+}
+
+img.postit-five{
+    position:fixed;
+    z-index:150;
+    top:14%;
+    left:74%;
+    width:25%;
+    height:auto;
+}
+
+.book-background{
+    background-image:url(../images/book.png);
+    background-size:auto 100%;
+    background-repeat:no-repeat;
+    padding-top:20px;
+    position:relative;
+    z-index:12;
+}
+
+.selector{
+    position:relative;
+    margin-bottom:40px;
+    margin-top:40px;
+    margin-left:20%;
+    
+}
+
+.rotator{
+    transform:rotate(4.75deg);
+    transform-origin:bottom;
+}
+
+p.selector-font{
+    font-size:large;
+}
+
+.vertical-center{
+    position: relative;
+     top:50%;
+     transform: translateY(50%);
+     background-image:url(../images/iPhone.png);
+     background-repeat:no-repeat;
+     padding-left:14%;
+     padding-top:5%;
+     padding-right:24%;
+     padding-bottom:40%;
+     height:auto;
+
+}
+
+.topic-form{
+    background-color:white;
+    top:5%;
+    left:14%;
+    right:24%;
+    bottom:40%;
+    height:auto;
+}
+
+.banner-image{
+    position:fixed;
+    top:0%;
+    left:0%;
+    width:100%;
+    height:100%;
+    margin-top:-2%;
+    background-image:url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-size:100% auto;
+    z-index:9;
+}
+
+.signin-postit{
+   max-height:450px;
+   margin-top:10px;
+   margin-left:20px;
+}
+
+.height-adjust{
+    height:auto;
+}
+
+.index-changer{
+    position:relative;
+    z-index:9;
+}
+
+img.yearlevel9{
+    position:fixed;
+    margin-left:-10px;
+    z-index:11;
+}
+img.yearlevel10{
+    position:fixed;
+    z-index:11;
+    margin-left:-20px;
+    margin-top:100px;
+}
+img.yearlevel11{
+    position:fixed;
+    z-index:11;
+    margin-left:-40px;
+    margin-top:200px;
+}
+img.yearlevel12{
+    position:fixed;
+    z-index:11;
+    margin-left:-50px;
+    margin-top:300px;
+}
+
+img.yearlevel-selected{
+    z-index:13;
+}
+
+.yellowpage-background{
+    margin-top:20px;
+    background-image: url(../images/yellowpagelesson.jpg);
+    position:relative;
+    z-index:13;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    font-size:18px;
+    height:100%;
+}
+
+.blackground{
+    background-color:black;
+    font-size:18px;
+    position:relative;
+    z-index:15;
+    padding:10px;
+}
+.whiteground{
+    background-color:white;
+    font-size:18px;
+    position:relative;
+    z-index:16;
+    padding:10px;
+}
+
+p.whitetext{
+    padding-left:3px;
+    color:white;
+}
+
+.smallpadleft{
+    padding-left:10px;
+    padding-bottom:10px;
+    padding-right:10px;
+}

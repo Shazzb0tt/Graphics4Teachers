@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "Lesson";
+}
+
+@model GraphicsSite.Models.Video
+
+<div class="container">
+    <div class="row">
+        <div class="yellowpage-background">
+            <div class="padded-left">
+                <br />
+                <strong>Title:</strong> Drawing a Tent, Lesson 2 <br />
+                <p><strong>Description: </strong>This is a sample page alone, this page has no bearing on what a final description shall look like, it is purely fillar to gain an understanding of the final product.
+                    This is a sample page alone, this page has no bearing on what a final description shall look like, it is purely fillar to gain an understanding of the final product.
+                    This is a sample page alone, this page has no bearing on what a final description shall look like, it is purely fillar to gain an understanding of the final product.
+                    This is a sample page alone, this page has no bearing on what a final description shall look like, it is purely fillar to gain an understanding of the final product.</p>
+                <br/>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="padded-top">
+            <div class="col-md-6">
+
+                <img src="~/images/iPad.png" />
+            </div>
+            <div class="col-md-6">
+                <div class="blackground">
+                    <p class="whitetext">URL video address:</p>
+                    <div class="smallpadleft">
+                        @Html.TextBox("URLBox", "https://www.vimeo.com/vimeourl", new { @class = "form-control", @readonly = "readonly" })
+                    </div>
+                </div>
+                <br/>
+                <div class="blackground">
+                    <p class="whitetext">Userful files:</p>
+                    <div class="whiteground">
+                        <a><p>PowerPoint</p></a>
+                        <a><p>Word</p></a>
+                        <a><p>Sketch Up</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

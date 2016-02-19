@@ -1,0 +1,62 @@
+﻿@{
+    ViewBag.Title = "Lesson Selection";
+}
+<head>
+    <title>ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <script>
+        function selectYear(element) {
+            document.getElementById("level9").classList.remove("yearlevel-selected");
+            document.getElementById("level10").classList.remove("yearlevel-selected");
+            document.getElementById("level11").classList.remove("yearlevel-selected");
+            document.getElementById("level12").classList.remove("yearlevel-selected");
+            document.getElementById(element.id).classList.add("yearlevel-selected");
+        }
+    </script>
+</head>
+<center><h2>Lesson Selection</h2></center>
+
+
+<a href="#"><img src="~/images/year09.png" class="yearlevel9 " id="level9" onclick="selectYear(this)" /></a>
+<a href="#"><img src="~/images/year10.png" class="yearlevel10 yearlevel-selected" id="level10" onclick="selectYear(this)" /></a>
+<a href="#"><img src="~/images/year11.png" class="yearlevel11" id="level11" onclick="selectYear(this)" /></a>
+<a href="#"><img src="~/images/year12.png" class="yearlevel12" id="level12" onclick="selectYear(this)" /></a>
+    <div class="book-background">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="rotator">
+                    <br /><br /><br />
+                    <div class="selector">
+                        <a><p class="selector-font">Freehand Sketching</p></a><br />
+                    </div>
+                    <div class="selector">
+                        <a><p class="selector-font">2-D Instrumental Drawing</p></a><br />
+                    </div>
+                    <div class="selector">
+                        <a><p class="selector-font">3-D Instrumental Drawing</p></a><br />
+                    </div>
+                    <div class="selector">
+                        <a><p class="selector-font">Rendering</p></a><br />
+                    </div>
+                    <div class="selector">
+                        <a><p class="selector-font">Computer Aided Drawing</p></a><br />
+                    </div>
+                    <br /><br />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="vertical-center">
+                    <div class="topic-form">
+                        <p>adgfasgasdgsdagasdgasdgadsfgassadfasdfasdfashfg</p>
+                        <p>adgfasgasdgsdagasdgasdgadsfgassadfasdfasdfashfg</p>
+                        <p>adgfasgasdgsdagasdgasdgadsfgassadfasdfasdfashfg</p>
+                        <p>adgfasgasdgsdagasdgasdgadsfgassadfasdfasdfashfg</p>
+                        <p>adgfasgasdgsdagasdgasdgadsfgassadfasdfasdfashfg</p>
+                        <p>adgfasgasdgsdagasdgasdgadsfgassadfasdfasdfashfg</p>
+                        <p>adgfasgasdgsdagasdgasdgadsfgassadfasdfasdfashfg</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
