@@ -80,7 +80,7 @@ img.twd{
     transform: rotate(15deg);
 }
 img.mouse{
-    z-index:4;
+    z-index:25;
     position: fixed; bottom: -50px; right: 175px;
     rotation: 50deg;
     rotation-point:center;
@@ -272,14 +272,14 @@ background-size:cover;
 }
 
 img.add-user{
-    width:50%;
+    width:64%;
     height:50px;
     margin-top:2%;
     margin-left:-3%;
     margin-right:-3%;
 }
 img.change-password{
-    width:50%;
+    width:60%;
     height:50px;
     margin-top:2%;
     margin-right:-3%;
@@ -334,7 +334,7 @@ img.checkout{
 img.postit-one{
     position:fixed;
     z-index:150;
-    top:45%;
+    top:47%;
     left:4%;
     width:25%;
     height:auto;
@@ -343,7 +343,7 @@ img.postit-one{
 img.postit-two{
     position:fixed;
     z-index:150;
-    top:35%;
+    top:37%;
     left:21%;
     width:23%;
     height:auto;
@@ -352,7 +352,7 @@ img.postit-two{
 img.postit-three{
     position:fixed;
     z-index:150;
-    top:26%;
+    top:28%;
     left:39%;
     width:22%;
     height:auto;
@@ -361,7 +361,7 @@ img.postit-three{
 img.postit-four{
     position:fixed;
     z-index:150;
-    top:21%;
+    top:23%;
     left:54%;
     width:25%;
     height:auto;
@@ -370,7 +370,7 @@ img.postit-four{
 img.postit-five{
     position:fixed;
     z-index:150;
-    top:14%;
+    top:16%;
     left:74%;
     width:25%;
     height:auto;
@@ -385,7 +385,7 @@ img.postit-five{
     z-index:12;
 }
 
-.selector{
+.selector {
     position:relative;
     margin-bottom:40px;
     margin-top:40px;
@@ -413,7 +413,6 @@ p.selector-font{
      padding-right:24%;
      padding-bottom:40%;
      height:auto;
-
 }
 
 .topic-form{
@@ -516,4 +515,22 @@ p.whitetext{
     padding-left:10px;
     padding-bottom:10px;
     padding-right:10px;
+}
+
+.fixed-index-changer{
+    position:fixed;
+    z-index:13;
+}
+
+.margin-bot{
+    margin-bottom:80px;
+}
+
+.area-selected{
+    color:black;
+
+}
+
+.area{
+    color:grey;
 }
