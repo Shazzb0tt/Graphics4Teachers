@@ -38,34 +38,24 @@ img.yellowpage{
     display:block;
     height:auto;
     width:90%;
-    margin-top:-20%;
+    margin-top:-15%;
     top: 10px;
     left:5%;
 
 }
 img.rubber{
     z-index:1031;
-    width:7%;
+    width:14%;
     height:auto;
-     -webkit-transform: rotate(30deg);
-    -moz-transform: rotate(15deg);
-    -ms-transform: rotate(15deg);
-    -o-transform: rotate(15deg);
-    transform: rotate(15deg);
-     position: fixed;
-    top: 30px;  
-    right:20px;
+    position: fixed;
+    top: 0px;  
+    right:40px;
 }
 img.fbd{
     z-index:11;
      position: fixed;
     top: 18px;  
     right:100px;
-     -webkit-transform: rotate(15deg);
-    -moz-transform: rotate(15deg);
-    -ms-transform: rotate(15deg);
-    -o-transform: rotate(15deg);
-    transform: rotate(15deg);
 }
 img.twd{
     z-index:11;
@@ -73,19 +63,14 @@ img.twd{
    
      top: 32px;  
     right:39px;
-     -webkit-transform: rotate(15deg);
-    -moz-transform: rotate(15deg);
-    -ms-transform: rotate(15deg);
-    -o-transform: rotate(15deg);
-    transform: rotate(15deg);
 }
 img.mouse{
     z-index:25;
-    position: fixed; bottom: -50px; right: 175px;
+    position: fixed; bottom: -50px; right: 120px;
     rotation: 50deg;
     rotation-point:center;
-    width: 6%;
-    height: auto;
+    width: auto;
+    height: 15%;
     -webkit-transform: rotate(310deg);
     -moz-transform: rotate(310deg);
     -ms-transform: rotate(310deg);
@@ -95,9 +80,9 @@ img.mouse{
 img.login{
     z-index:99;
     position: relative;
-    margin-top:9%;
+    margin-top:20%;
     float:right;
-    width:18%;
+    width:20%;
     height:auto;
 }
 
@@ -117,10 +102,10 @@ img.login{
 img.home{
     z-index:1400;
     position: fixed;
-    top:-4px;
-    height:10%;
-    width:auto;
-    left:10%;
+    top:-12px;
+    height:auto;
+    width:8%;
+    left:12%;
 }
 div.banner{
      width:100%;
@@ -234,7 +219,7 @@ max-height:10%;
 }
 
 body {
-    padding-top:15%;
+    padding-top:20%;
   background-image: url('../images/background.png');
 background-size:cover;
   background-repeat:repeat;
@@ -394,7 +379,7 @@ img.postit-five{
 }
 
 .rotator{
-    transform:rotate(4.75deg);
+    transform:rotate(0deg);
     transform-origin:bottom;
 }
 
@@ -430,7 +415,7 @@ p.selector-font{
     left:0%;
     width:100%;
     height:100%;
-    margin-top:-2%;
+    margin-top:-10%;
     background-image:url(../images/banner.png);
     background-repeat: no-repeat;
     background-size:100% auto;
